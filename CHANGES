@@ -13,6 +13,8 @@ PyVISA Changelog
   datatype elements
 - fix read_binary_values with header_fmt="hp" when a byte of the binary length
   is the termination character, which ended the read inside the header
+- add typing overloads to ResourceManager.open_resource to narrow the
+  return type when resource_pyclass is given PR #989
 
 1.17.0 (06-07-2026)
 -------------------
