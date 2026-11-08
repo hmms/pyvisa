@@ -3296,14 +3296,7 @@ class ResourceManager(object):
         open_timeout: int = constants.VI_TMO_IMMEDIATE,
         resource_pyclass: Optional[Type["Resource"]] = None,
         **kwargs: Any,
-     def open_resource(
-         self,
-         resource_name,
-        access_mode = constants.AccessModes.no_lock,
-        open_timeout = constants.VI_TMO_IMMEDIATE,
-        resource_pyclass = None,
-        **kwargs,
-    ):
+    ) -> "Resource":
         """Return an instrument for the resource name.
 
         Parameters
